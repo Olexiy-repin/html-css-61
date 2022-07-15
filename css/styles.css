@@ -2,9 +2,9 @@
   --primary-font: 'Open Sans', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --primary-text-color-theme-dark: #9da4bd;
-  --primary-text-color-theme-light: #303030;
+  --primary-text-color-theme-light: #555555;
   --secondary-text-color-theme-dark: #ffffff;
-  --secondary-text-color-theme-light: #555555;
+  --secondary-text-color-theme-light: #303030;
   --accent-color: #ff6c00;
 }
 
@@ -28,8 +28,6 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
-
-  /* color: #ffffff; */
 }
 
 .modal-btn:hover,
@@ -44,7 +42,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.2em;
 
-  color: #303030;
+  color: var(--secondary-text-color-theme-light);
 }
 
 .media-list-link:hover,
@@ -61,11 +59,11 @@ body {
 }
 
 .suptitle-theme-dark {
-  color: rgba(157, 164, 189, 0.6);
+  color: var(--primary-text-color-theme-dark);
 }
 
 .suptitle-theme-light {
-  color: #303030;
+  color: var(--primary-text-color-theme-light);
 }
 
 .section-description {
@@ -73,25 +71,30 @@ body {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-
-  /* color: #9da4bd; */
 }
 
-.modal-btn {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  cursor: pointer;
-
-  /* color: #ffffff; */
+.section-description-theme-dark {
+  color: var(--primary-text-color-theme-dark);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: var(--accent-color);
-  color: #ffffff;
+.section-description-theme-light {
+  color: var(--primary-text-color-theme-light);
+}
+
+.title {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.67;
+  letter-spacing: 0.05em;
+}
+
+.title-theme-dark {
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.title-theme-light {
+  color: var(--secondary-text-color-theme-light);
 }
 /* ==================== /COMPONENTS ==================== */
 
@@ -101,8 +104,6 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-
-  /* color: #ffffff; */
 }
 
 .menu-link:hover,
@@ -115,8 +116,6 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-
-  /* color: #ffffff; */
 }
 
 .contact-phone-number:hover,
@@ -132,7 +131,101 @@ body {
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-
-  /* color: #ffffff; */
 }
 /* ==================== /HERO ==================== */
+
+/* ==================== ABOUT ==================== */
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-light);
+}
+/* ==================== /ABOUT ==================== */
+
+/* ==================== SERVICES ==================== */
+.services-table-name,
+.services-table-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-dark);
+}
+/* ==================== /SERVICES ==================== */
+
+/* ==================== ADVANTAGES ==================== */
+.advantages-list-quantity {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.advantages-list-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--secondary-text-color-theme-light);
+}
+/* ==================== /ADVANTAGES ==================== */
+
+/* ==================== EMPLOYEES ==================== */
+.employees-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.employees-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+/* ==================== /EMPLOYEES ==================== */
+
+/* ==================== GALLERY ==================== */
+/* ==================== /GALLERY ==================== */
+
+/* ==================== CONTACT INFO ==================== */
+.contact-list-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-dark);
+}
+
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-info-date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-dark);
+}
+/* ==================== /CONTACT INFO ==================== */
+
+/* ==================== FOOTER ==================== */
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--primary-text-color-theme-dark);
+}
+/* ==================== /FOOTER ==================== */
