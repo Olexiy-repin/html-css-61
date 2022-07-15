@@ -12,33 +12,40 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- HEADER -->
     <header class="page-header">
-      <nav class="page-nav">
-        <a class="logo" href="">
-          <img class="logo-img" src="./images/logo.svg" alt="логотип" width="69" height="55" />
-        </a>
-        <ul class="menu list">
-          <li class="menu-item">
-            <a class="menu-link link" href="#about">О нас</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="#services">Услуги и цены</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="#employees">Мастера</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="contact-phone-number link" href="tel:+380441111111">+38 044 111 11 11</a>
-      <button class="modal-btn" type="button">онлайн-запись</button>
+      <div class="container page-header-container">
+        <nav class="page-nav">
+          <a class="logo" href="">
+            <img class="logo-img" src="./images/logo.svg" alt="логотип" width="69" height="55" />
+          </a>
+          <ul class="menu list">
+            <li class="menu-item">
+              <a class="menu-link link" href="#about">О нас</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="#services">Услуги и цены</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="#employees">Мастера</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="contact-phone-number link" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="modal-btn" type="button">онлайн-запись</button>
+      </div>
     </header>
+
     <main>
       <!-- HERO -->
       <section class="hero">
@@ -61,7 +68,7 @@
         </div>
       </section>
       <!-- ABOUT -->
-      <section class="about" id="about">
+      <section class="about container" id="about">
         <div class="about-left-side">
           <ul class="about-gallery list">
             <li class="about-gallery-item">
@@ -100,7 +107,7 @@
         </div>
       </section>
       <!-- SERVICES -->
-      <section class="services" id="services">
+      <section class="services section" id="services">
         <p class="suptitle suptitle-theme-dark">Проведи время в компании лучших мастеров</p>
         <h2 class="title">Услуги и цены</h2>
         <table class="services-table list">
@@ -142,7 +149,7 @@
         <button class="modal-btn" type="button">онлайн-запись</button>
       </section>
       <!-- ADVANTAGES -->
-      <section class="advantages">
+      <section class="advantages section">
         <div class="advantages-left-side">
           <ul class="advantages-list list">
             <li class="advantages-list-item">
@@ -173,44 +180,52 @@
         </div>
       </section>
       <!-- EMPLOYEES -->
-      <section class="employees-section" id="our-team">
-        <p class="suptitle suptitle-theme-light">для настоящих ценителей атмосферы</p>
-        <h2 class="title title-theme-light">Наши мастера</h2>
-        <ul class="employees list">
-          <li class="employees-card">
-            <img
-              class="employees-photo"
-              src="./images/employees/john-smith.jpg"
-              alt="мастер стрижет клиента"
-              width="370"
-              height="346"
-            />
-            <h3 class="employees-name" lang="en">John Smith</h3>
-            <p class="employees-position" lang="en">Extreme Barber</p>
-          </li>
-          <li class="employees-card">
-            <img
-              class="employees-photo"
-              src="./images/employees/michele-doe.jpg"
-              alt="мастер стрижет клиента"
-              width="370"
-              height="346"
-            />
-            <h3 class="employees-name" lang="en">Michele Doe</h3>
-            <p class="employees-position" lang="en">Extreme Barber</p>
-          </li>
-          <li class="employees-card">
-            <img
-              class="employees-photo"
-              src="./images/employees/alan-black.jpg"
-              alt="мастер стрижет клиента"
-              width="370"
-              height="346"
-            />
-            <h3 class="employees-name" lang="en">Alan Black</h3>
-            <p class="employees-position" lang="en">Extreme Barber</p>
-          </li>
-        </ul>
+      <section class="employees-section section" id="our-team">
+        <div class="container">
+          <p class="suptitle suptitle-theme-light">для настоящих ценителей атмосферы</p>
+          <h2 class="title title-theme-light employees-title">Наши мастера</h2>
+          <ul class="employees list">
+            <li class="employees-card">
+              <img
+                class="employees-photo"
+                src="./images/employees/john-smith.jpg"
+                alt="мастер стрижет клиента"
+                width="370"
+                height="346"
+              />
+              <div class="employees-card-content-wrapper">
+                <h3 class="employees-name" lang="en">John Smith</h3>
+                <p class="employees-position" lang="en">Extreme Barber</p>
+              </div>
+            </li>
+            <li class="employees-card">
+              <img
+                class="employees-photo"
+                src="./images/employees/michele-doe.jpg"
+                alt="мастер стрижет клиента"
+                width="370"
+                height="346"
+              />
+              <div class="employees-card-content-wrapper">
+                <h3 class="employees-name" lang="en">Michele Doe</h3>
+                <p class="employees-position" lang="en">Extreme Barber</p>
+              </div>
+            </li>
+            <li class="employees-card">
+              <img
+                class="employees-photo"
+                src="./images/employees/alan-black.jpg"
+                alt="мастер стрижет клиента"
+                width="370"
+                height="346"
+              />
+              <div class="employees-card-content-wrapper">
+                <h3 class="employees-name" lang="en">Alan Black</h3>
+                <p class="employees-position" lang="en">Extreme Barber</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- GALLERY -->
       <section class="gallery">
