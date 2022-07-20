@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 700px;
+  margin: 0 auto;
+  outline: 1px solid #000;
+  padding: 100px 0;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  box-shadow: 10px 10px 0px 0px tomato;
+}
+
+.text {
+  font-family: sans-serif;
+  font-size: 22px;
+  text-align: center;
+  color: #000000;
+
+  box-shadow: 10px 10px 0 0 teal;
+  text-shadow: 2px 2px 1px tomato;
+}
+
+/* 
+- box-shadow: x-offset y-offset blur spread color;
+- box-shadow: inset x-offset y-offset blur spread color;
+- text-shadow x-offset y-offset blur color;
+*/

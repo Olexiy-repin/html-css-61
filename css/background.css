@@ -1,0 +1,16 @@
+.background {
+  width: 900px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 10px dashed rgba(255, 0, 0, 0.5);
+  color: #ffffff;
+  background-color: #303030;
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    url('https://picsum.photos/seed/picsum/200/300');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  /* background-origin: padding-box; */
+  background-clip: padding-box;
+}
