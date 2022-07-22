@@ -39,9 +39,35 @@ body {
 }
 
 .social-list__item-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #fff;
+
+  /* background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: center center; */
+}
+
+/* .social-list__item-link_facebook {
+  background-image: url('../images/facebook.svg');
+}
+
+.social-list__item-link_twitter {
+  background-image: url('../images/twitter.svg');
+}
+
+.social-list__item-link_telegram {
+  background-image: url('../images/telegram.svg');
+} */
+.social-list__icon {
+  fill: tomato;
+}
+
+.social-list__item-link:hover .social-list__icon,
+.social-list__item-link:focus .social-list__icon {
+  fill: teal;
 }
