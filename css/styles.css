@@ -112,6 +112,8 @@ body {
 }
 
 .suptitle {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -120,12 +122,29 @@ body {
   margin-bottom: 20px;
 }
 
+.suptitle::before {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: tomato;
+  content: '';
+  margin-right: 20px;
+}
+
 .suptitle-theme-dark {
   color: var(--primary-text-color-theme-dark);
 }
 
+.suptitle-theme-dark::before {
+  background-color: var(--primary-text-color-theme-dark);
+}
+
 .suptitle-theme-light {
   color: var(--primary-text-color-theme-light);
+}
+
+.suptitle-theme-light::before {
+  background-color: var(--primary-text-color-theme-light);
 }
 
 .section-description {
@@ -232,6 +251,10 @@ body {
   padding-bottom: 206px;
   padding-left: 100px;
   flex-grow: 1;
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    url('../images/hero/bg.jpg');
+  background-size: cover;
+  background-color: #303030;
 }
 
 .hero-section-description {
@@ -245,6 +268,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
+  color: var(--secondary-text-color-theme-dark);
 }
 /* ==================== /HERO ==================== */
 
@@ -420,6 +444,37 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #303030;
+}
+
+.socail-list-icon {
+  fill: #303030;
+}
+
+.social-list-link:hover .socail-list-icon,
+.social-list-link:focus .socail-list-icon {
+  fill: var(--accent-color);
 }
 /* ==================== /EMPLOYEES ==================== */
 
@@ -431,14 +486,11 @@ body {
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  gap: 30px;
 }
 
 .gallery-list-item {
   flex-basis: calc((100% - 120px) / 4);
-  margin-left: 30px;
-  margin-top: 30px;
 }
 /* ==================== /GALLERY ==================== */
 
