@@ -74,10 +74,23 @@ body {
   background-color: transparent;
 }
 
+.modal-btn-theme-dark {
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.modal-btn-theme-light {
+  color: var(--secondary-text-color-theme-light);
+}
+
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+}
+
+.media-list {
+  display: flex;
+  align-items: center;
 }
 
 .media-list-link {
@@ -87,6 +100,10 @@ body {
   letter-spacing: 0.2em;
 
   color: var(--secondary-text-color-theme-light);
+}
+
+.media-list-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .media-list-link:hover,
@@ -130,13 +147,13 @@ body {
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 42px;
-  line-height: 1.67;
+  line-height: 1.16;
   letter-spacing: 0.05em;
 }
 
 .title-theme-dark {
   margin-bottom: 44px;
-  color: var(--secondary-text-color-theme-dark);
+  /* color: var(--secondary-text-color-theme-dark); */
 }
 
 .title-theme-light {
@@ -202,26 +219,90 @@ body {
 /* ==================== /HEADER ==================== */
 
 /* ==================== HERO ==================== */
+.hero-container {
+  display: flex;
+}
+
+.hero-left-side {
+  width: 100px;
+}
+
+.hero-right-side {
+  padding-top: 272px;
+  padding-bottom: 206px;
+  padding-left: 100px;
+  flex-grow: 1;
+}
+
+.hero-section-description {
+  max-width: 400px;
+}
+
 .main-title {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
 }
 /* ==================== /HERO ==================== */
 
 /* ==================== ABOUT ==================== */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-left-side,
+.about-right-side {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.about-right-side {
+  padding-left: 34px;
+}
+
+.about-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-section-description {
+  margin-bottom: 20px;
+}
+
 .about-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-light);
+  margin-bottom: 40px;
 }
 /* ==================== /ABOUT ==================== */
 
 /* ==================== SERVICES ==================== */
+.services-table-wrapper {
+  display: flex;
+}
+
+.services-table {
+  flex-basis: 50%;
+  padding: 30px 40px;
+  margin-bottom: 50px;
+  border: 1px solid #cccccc;
+}
+
+.services-table-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-table-row:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .services-table-name,
 .services-table-price {
   font-weight: 400;
@@ -230,9 +311,44 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
 }
+
+.services-modal-btn {
+  display: block;
+  margin: 0 auto;
+}
 /* ==================== /SERVICES ==================== */
 
 /* ==================== ADVANTAGES ==================== */
+.advantages-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-left-side,
+.advantages-right-side {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 370px;
+  margin: 0 auto;
+}
+
+.advantages-list-item {
+  width: 170px;
+  min-height: 134px;
+  padding: 21px;
+  background-color: #f7f7f7;
+}
+
+.advantages-list-item:nth-child(even) {
+  margin-top: 30px;
+}
+
 .advantages-list-quantity {
   font-weight: 700;
   font-size: 42px;
@@ -248,6 +364,10 @@ body {
   line-height: 1.36;
   text-align: center;
   color: var(--secondary-text-color-theme-light);
+}
+
+.advantages-section-description {
+  max-width: 460px;
 }
 /* ==================== /ADVANTAGES ==================== */
 
@@ -304,6 +424,22 @@ body {
 /* ==================== /EMPLOYEES ==================== */
 
 /* ==================== GALLERY ==================== */
+.gallery-suptitle {
+  margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.gallery-list-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 /* ==================== /GALLERY ==================== */
 
 /* ==================== CONTACT INFO ==================== */
@@ -330,6 +466,17 @@ body {
 /* ==================== /CONTACT INFO ==================== */
 
 /* ==================== FOOTER ==================== */
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .copyright {
   font-weight: 600;
   font-size: 11px;
