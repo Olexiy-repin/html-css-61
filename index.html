@@ -420,7 +420,7 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer-container">
-        <p class="copyright">&#xa9; Copyright 2020</p>
+        <p class="copyright">&copy; Copyright 2020</p>
         <ul class="media-list list">
           <li class="media-list-item">
             <a class="media-list-link link" href="" lang="en">Instagram</a>
@@ -439,6 +439,54 @@
             <use href="./images/sprite.svg#close-modal"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc"> Имя* </span>
+            <span class="modal-form-input-wrapper">
+              <input
+                type="text"
+                name="user_name"
+                class="modal-form-input"
+                required
+                pattern="[a-zA-Zа-яА-Я]+"
+                minlength="2"
+              />
+              <span class="modal-form-input-icon"></span>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc"> Телефон* </span>
+            <span class="modal-form-input-wrapper">
+              <input
+                type="tel"
+                name="user_phone"
+                class="modal-form-input"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <span class="modal-form-input-icon"></span>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc"> Сообщение </span>
+            <textarea
+              name="user_message"
+              class="modal-form-message"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <input
+            id="user-policy"
+            type="checkbox"
+            name="user_policy"
+            class="modal-form-check visually-hidden"
+          />
+          <label for="user-policy" class="modal-form-check-desc">
+            Соглашаюсь с рассылкой и принимаю&nbsp;<a href="">Условия договора </a>
+          </label>
+          <button type="submit" class="modal-form-submit">отправить</button>
+        </form>
       </div>
     </div>
 
