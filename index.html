@@ -16,30 +16,30 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- HEADER -->
     <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-nav">
-          <a class="logo" href="">
-            <svg class="logo-img" width="69" height="55">
+          <a class="logo page-header__logo" href="">
+            <svg class="logo__img" width="69" height="55">
               <use href="./images/sprite.svg#logo"></use>
             </svg>
           </a>
           <ul class="menu list">
-            <li class="menu-item">
-              <a class="menu-link link" href="#about">О нас</a>
+            <li class="menu__item">
+              <a class="menu__link menu__link_current link" href="#about">О нас</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="#services">Услуги и цены</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="#services">Услуги и цены</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="#employees">Мастера</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="#employees">Мастера</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="#contacts">Контакты</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -55,7 +55,7 @@
       <section class="hero">
         <div class="container hero-container">
           <div class="hero-left-side">
-            <ul class="media-list list">
+            <ul class="media-list hero-media-list list">
               <li class="media-list-item">
                 <a class="media-list-link link" href="" lang="en">Instagram</a>
               </li>
@@ -65,7 +65,7 @@
             </ul>
           </div>
           <div class="hero-right-side">
-            <p class="suptitle suptitle-theme-dark" lang="en">A hair salon for men in Kyiv</p>
+            <p class="suptitle suptitle_theme_dark" lang="en">A hair salon for men in Kyiv</p>
             <h1 class="main-title" lang="en">BarberShop</h1>
             <p class="section-description section-description-theme-dark hero-section-description">
               Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
@@ -99,7 +99,7 @@
             </ul>
           </div>
           <div class="about-right-side">
-            <h2 class="suptitle suptitle-theme-light">О НАС</h2>
+            <h2 class="suptitle suptitle_theme_light">О НАС</h2>
             <h3 class="title title-theme-light">Лучший Барбершоп твоего города</h3>
             <p
               class="section-description section-description-theme-light about-section-description"
@@ -119,7 +119,7 @@
       <!-- SERVICES -->
       <section class="services section" id="services">
         <div class="container">
-          <p class="suptitle suptitle-theme-dark">Проведи время в компании лучших мастеров</p>
+          <p class="suptitle suptitle_theme_dark">Проведи время в компании лучших мастеров</p>
           <h2 class="title title-theme-dark">Услуги и цены</h2>
           <div class="services-table-wrapper">
             <table class="services-table list">
@@ -188,7 +188,7 @@
             </ul>
           </div>
           <div class="advantages-right-side">
-            <p class="suptitle suptitle-theme-light">старая традиционная школа</p>
+            <p class="suptitle suptitle_theme_light">старая традиционная школа</p>
             <h2 class="title title-theme-light">Почему приходят именно к нам?</h2>
             <p
               class="section-description section-description-theme-light advantages-section-description"
@@ -202,7 +202,7 @@
       <!-- EMPLOYEES -->
       <section class="employees-section section" id="our-team">
         <div class="container">
-          <p class="suptitle suptitle-theme-light">для настоящих ценителей атмосферы</p>
+          <p class="suptitle suptitle_theme_light">для настоящих ценителей атмосферы</p>
           <h2 class="title title-theme-light employees-title">Наши мастера</h2>
           <ul class="employees list">
             <li class="employees-card">
@@ -219,28 +219,28 @@
                 <ul class="social-list list">
                   <li class="social-list-item">
                     <a href="" class="social-list-link">
-                      <svg class="socail-list-icon" width="20" height="20">
+                      <svg class="social-list-icon" width="20" height="20">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list-item">
                     <a href="" class="social-list-link">
-                      <svg class="socail-list-icon" width="20" height="20">
+                      <svg class="social-list-icon" width="20" height="20">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list-item">
                     <a href="" class="social-list-link">
-                      <svg class="socail-list-icon" width="20" height="20">
+                      <svg class="social-list-icon" width="20" height="20">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list-item">
                     <a href="" class="social-list-link">
-                      <svg class="socail-list-icon" width="20" height="20">
+                      <svg class="social-list-icon" width="20" height="20">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -262,28 +262,28 @@
                 <ul class="social-list list">
                   <li class="social-list-item">
                     <a href="" class="social-list-link">
-                      <svg class="socail-list-icon" width="20" height="20">
+                      <svg class="social-list-icon" width="20" height="20">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list-item">
                     <a href="" class="social-list-link">
-                      <svg class="socail-list-icon" width="20" height="20">
+                      <svg class="social-list-icon" width="20" height="20">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list-item">
                     <a href="" class="social-list-link">
-                      <svg aria-label="facebook" class="socail-list-icon" width="20" height="20">
+                      <svg aria-label="facebook" class="social-list-icon" width="20" height="20">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list-item">
                     <a href="" class="social-list-link">
-                      <svg aria-label="linkedin" class="socail-list-icon" width="20" height="20">
+                      <svg aria-label="linkedin" class="social-list-icon" width="20" height="20">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -305,28 +305,28 @@
                 <ul class="social-list list">
                   <li class="social-list-item">
                     <a href="" class="social-list-link">
-                      <svg class="socail-list-icon" width="20" height="20">
+                      <svg class="social-list-icon" width="20" height="20">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list-item">
                     <a href="" class="social-list-link">
-                      <svg class="socail-list-icon" width="20" height="20">
+                      <svg class="social-list-icon" width="20" height="20">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list-item">
                     <a href="" class="social-list-link">
-                      <svg class="socail-list-icon" width="20" height="20">
+                      <svg class="social-list-icon" width="20" height="20">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-list-item">
                     <a href="" class="social-list-link">
-                      <svg class="socail-list-icon" width="20" height="20">
+                      <svg class="social-list-icon" width="20" height="20">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -341,7 +341,7 @@
       <section class="gallery section">
         <div class="container">
           <h2 hidden>галерея работ</h2>
-          <p class="suptitle suptitle-theme-light gallery-suptitle">
+          <p class="suptitle suptitle_theme_light gallery-suptitle">
             На латинском языке “барба” означает “борода”
           </p>
           <ul class="gallery-list list">
@@ -454,6 +454,7 @@
               <span class="modal-form-input-icon"></span>
             </span>
           </label>
+
           <label class="modal-form-field">
             <span class="modal-form-input-desc"> Телефон* </span>
             <span class="modal-form-input-wrapper">

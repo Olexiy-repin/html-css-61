@@ -1,0 +1,34 @@
+.suptitle {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  &::before {
+    display: block;
+    width: 60px;
+    height: 1px;
+    content: '';
+    margin-right: 20px;
+  }
+}
+
+.suptitle_theme_dark {
+  color: var(--primary-text-color-theme-dark);
+
+  &::before {
+    background-color: var(--primary-text-color-theme-dark);
+  }
+}
+
+.suptitle_theme_light {
+  color: var(--primary-text-color-theme-light);
+
+  &::before {
+    background-color: var(--primary-text-color-theme-light);
+  }
+}

@@ -1,0 +1,29 @@
+.media-list {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    flex-shrink: 0;
+    width: 60px;
+    height: 1px;
+    content: '';
+    margin-right: 40px;
+    background-color: var(--secondary-text-color-theme-light);
+  }
+}
+
+.media-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.media-list-link {
+  @include font(11px, 600, 15px);
+  letter-spacing: 0.2em;
+  color: var(--secondary-text-color-theme-light);
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

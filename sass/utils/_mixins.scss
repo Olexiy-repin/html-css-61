@@ -1,0 +1,5 @@
+@mixin font($fs: 24px, $fw: 700, $lh: 32px) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh / $fs;
+}
