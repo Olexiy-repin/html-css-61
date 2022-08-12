@@ -56,27 +56,25 @@
 }
 
 .social-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
   transition: background-color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    background-color: #303030;
+  }
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: #303030;
-}
-
-.socail-list-icon {
+.social-list-icon {
   fill: #303030;
   transition: fill var(--transition-dur-and-func);
-}
 
-.social-list-link:hover .socail-list-icon,
-.social-list-link:focus .socail-list-icon {
-  fill: var(--accent-color);
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    fill: var(--accent-color);
+  }
 }

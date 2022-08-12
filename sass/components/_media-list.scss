@@ -17,9 +17,7 @@
 }
 
 .media-list-link {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
+  @include font(11px, 600, 15px);
   letter-spacing: 0.2em;
   color: var(--secondary-text-color-theme-light);
   transition: color var(--transition-dur-and-func);

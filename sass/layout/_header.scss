@@ -16,7 +16,11 @@
   align-items: center;
 }
 
-.logo {
+// .logo {
+//   margin-right: 71px;
+// }
+
+.page-header__logo {
   margin-right: 71px;
 }
 
@@ -25,22 +29,22 @@
   align-items: center;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 40px;
 }
 
-.menu-link {
+.menu__link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--secondary-text-color-theme-dark);
   transition: color var(--transition-dur-and-func);
-}
 
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contact-phone-number {
@@ -52,9 +56,9 @@
   margin-right: 40px;
   color: var(--secondary-text-color-theme-dark);
   transition: color var(--transition-dur-and-func);
-}
 
-.contact-phone-number:hover,
-.contact-phone-number:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

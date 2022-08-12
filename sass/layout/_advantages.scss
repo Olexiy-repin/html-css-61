@@ -22,10 +22,10 @@
   min-height: 134px;
   padding: 21px;
   background-color: #f7f7f7;
-}
 
-.advantages-list-item:nth-child(even) {
-  margin-top: 30px;
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
 }
 
 .advantages-list-quantity {

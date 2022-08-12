@@ -12,33 +12,33 @@
 .services-table {
   flex-basis: 50%;
   padding: 30px 40px;
-}
 
-.services-table:first-child {
-  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-}
+  &:first-child {
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
 
-.services-table:last-child {
-  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  &:last-child {
+    background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
 }
 
 .services-table-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
 
-.services-table-row::before {
-  flex-grow: 1;
-  height: 1px;
-  content: '';
-  margin-right: 6px;
-  margin-left: 6px;
-  background-color: rgba(157, 164, 189, 0.12);
-}
+  &::before {
+    flex-grow: 1;
+    height: 1px;
+    content: '';
+    margin-right: 6px;
+    margin-left: 6px;
+    background-color: rgba(157, 164, 189, 0.12);
+  }
 
-.services-table-row:not(:last-child) {
-  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .services-table-name {

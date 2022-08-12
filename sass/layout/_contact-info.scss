@@ -4,11 +4,11 @@
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
-}
 
-.contact-list-link:hover,
-.contact-list-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contact-info-date {

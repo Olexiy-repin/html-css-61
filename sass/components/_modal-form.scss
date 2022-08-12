@@ -9,9 +9,7 @@
 
 .modal-form-input-desc {
   display: block;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.2;
+  @include font(12px, 400, 14px);
   margin-bottom: 8px;
   color: #303030;
 }
