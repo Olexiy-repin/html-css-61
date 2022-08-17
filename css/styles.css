@@ -26,15 +26,61 @@ ol {
   list-style: none;
 }
 
-/* body {
+body {
   background-color: tomato;
-} */
+}
 
 /* ========== MIN-WIDTH MAX-WIDTH ========== */
+/* 400+ */
+/* @media (min-width: 400px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* 768+ */
+/* @media (min-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
+
+/* 0px - 767px */
+/* @media (max-width: 767px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* 0px - 400px */
+/* @media (max-width: 400px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
 
 /* ========== AND ========== */
+/* 
+768px+ true
+0px - 1199px true
+*/
+
+/* @media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: teal;
+  }
+} */
 
 /* ========== OR ========== */
+/* 
+0px - 767px false
+1200px+ true
+*/
+/* @media (max-width: 767px), (min-width: 1200px) {
+  body {
+    background-color: teal;
+  }
+} */
 
 /* ========== TYPES ========== */
 /* 
@@ -43,4 +89,47 @@ ol {
   print
 */
 
+/* @media screen and (min-width: 768px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* @media print {
+  .menu {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+} */
+
 /* ========== ORIENTATION ========== */
+/* @media screen and (orientation: landscape) and (max-width: 767px) {
+  body {
+    background-color: violet;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  body {
+    background-color: aqua;
+  }
+} */
