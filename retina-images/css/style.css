@@ -1,0 +1,63 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+body {
+  height: 100vh;
+}
+
+.banner {
+  min-height: 600px;
+  background-image: url('../images/car.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 
+1x - 96dpi
+2x - 192dpi
+3x - 288dpi
+*/
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.section {
+  padding: 50px 0;
+}
