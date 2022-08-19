@@ -9,7 +9,39 @@
 
   <body>
     <div class="container">
-      <img src="./images/img-mobile.jpg" alt="retina picture" class="picture-img" />
+      <picture>
+        <source
+          srcset="./images/img-desktop.webp 1x, ./images/img-desktop@2x.webp 2x"
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/img-desktop.jpg 1x, ./images/img-desktop@2x.jpg 2x"
+          media="(min-width: 1200px)"
+        />
+
+        <source
+          srcset="./images/img-tablet.webp 1x, ./images/img-tablet@2x.webp 2x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/img-tablet.jpg 1x, ./images/img-tablet@2x.jpg 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/img-mobile.webp 1x, ./images/img-mobile@2x.webp 2x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/img-mobile.jpg 1x, ./images/img-mobile@2x.jpg 2x"
+          media="(max-width: 767px)"
+        />
+
+        <img src="./images/img-mobile.jpg" alt="retina picture" class="picture-img" />
+      </picture>
     </div>
   </body>
 </html>
